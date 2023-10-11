@@ -1,34 +1,29 @@
-class Turma:
+from escolas import Escola
 
-    def __init__(self, ano, letra, quantidade_alunos, escola):
+class Turma:
+    def __init__(self, ano, quantidade_alunos, escola: Escola):
         self.ano = ano
-        self.letra = letra
         self.quantidade_alunos = quantidade_alunos
         self.escola = escola
 
-    def get_ano(self):
+    def get_ano(self) -> str:
         return self.ano
 
-    def set_ano(self, novo_ano):
+    def set_ano(self, novo_ano: str):
         self.ano = novo_ano
 
-    def get_letra(self):
-        return self.letra
-
-    def set_letra(self, nova_letra):
-        self.letra = nova_letra
-
-    def get_quantidade_alunos(self):
+    def get_quantidade_alunos(self) -> int:
         return self.quantidade_alunos
 
-    def set_quantidade_alunos(self, novo_quantidade_alunos):
-        self.quantidade_alunos = novo_quantidade_alunos
+    def set_quantidade_alunos(self, nova_quantidade: int):
+        self.quantidade_alunos = nova_quantidade
 
-    def get_escola(self):
+    def get_escola(self) -> Escola:
         return self.escola
 
-    def set_escola(self, nova_escola):
+    def set_escola(self, nova_escola: Escola):
         self.escola = nova_escola
 
-    def to_string(self):
-        return f"Ano: {self.ano} :: Letra: {self.letra} :: Quantidade de alunos: {self.quantidade_alunos}"
+    def __str__(self):
+        return f"{self.get_ano()} | {self.get_quantidade_alunos()} | {self.get_escola().get_nome()}"
+    

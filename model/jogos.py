@@ -1,34 +1,32 @@
-class Jogo:
+from escolas import Escola
+from times import Time
 
-    def __init__(self, data, horario, escola, time):
-        self.data = data
-        self.horario = horario
+from datetime import datetime
+
+class Jogo:
+    def __init__(self, datahora: datetime, escola: Escola, time: Time):
+        self.datahora = datahora
         self.escola = escola
         self.time = time
 
-    def get_data(self):
-        return self.data
-
-    def set_data(self, nova_data):
-        self.data = nova_data
-
-    def get_horario(self):
-        return self.horario
+    def get_datahora(self) -> datetime:
+        return self.datahora
     
-    def set_horario(self, novo_horario):
-        self.horario = novo_horario
+    def set_datahora(self, nova_datahora: datetime):
+        self.datahora = nova_datahora
 
-    def get_escola(self):
+    def get_escola(self) -> Escola:
         return self.escola
-
-    def set_escola(self, nova_escola):
+    
+    def set_escola(self, nova_escola: Escola):
         self.escola = nova_escola
 
-    def get_time(self):
+    def get_time(self) -> Time:
         return self.time
-
-    def set_time(self, novo_time):
+    
+    def set_time(self, novo_time: Time):
         self.time = novo_time
 
-    def to_string(self):
-        return f"Data: {self.data} :: Horário: {self.horario}"
+    def __str__(self) -> str:
+        return f"{self.get_datahora()} | {self.get_escola().get_nome()} | {self.get_time().get_nome()}"
+    
