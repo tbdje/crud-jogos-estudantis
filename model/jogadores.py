@@ -47,4 +47,3 @@ class Jogador:
 
     def to_string(self) -> str:
         return f"{self.get_cpf()} | {self.get_nome()} | {self.get_idade()} | {self.get_posicao()} | {self.get_numero_camisa()} | {self.get_time().get_nome()}"
-    
