@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <architect-project version="1.0" appversion="1.0.9">
  <project-name>mld_jogos_estudantis</project-name>
- <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <print-settings printerName="Microsoft Print to PDF" numCopies="1" zoom="1.14" pageNumbersPrinted="false" orientation="1" paperWidth="841.8897637795276" paperHeight="1190.551181102362" leftBorder="50.00314960629921" rightBorder="50.00314960629928" topBorder="50.00314960629921" bottomBorder="50.00314960629917" />
  <project-data-sources>
   <data-source id="DS0">
    <property key="Logical" value="PlayPen Database" />
@@ -48,185 +48,125 @@
     <column id="COL11" populated="true" UUID="e5d119c7-9339-4f61-a21a-da8155a3bfbe" autoIncrement="false" autoIncrementSequenceName="JOGOS_DATA_HORA_seq" defaultValue="" name="DATA_HORA" nullable="0" physicalName="DATA_HORA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
      <remarks></remarks>
     </column>
+    <column id="COL12" populated="true" UUID="eee2e7b9-7f46-4a4f-84fb-46239dd3bd73" autoIncrement="false" autoIncrementSequenceName="JOGOS_CNPJ_seq" defaultValue="" name="CNPJ" nullable="0" physicalName="CNPJ" precision="15" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
     </folder>
     <folder id="FOLTAB93" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
     <folder id="FOLTAB92" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB94" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX12" populated="true" UUID="92ef04c2-526b-498b-88ca-db04e2694837" clustered="false" name="JOGOS_pk" physicalName="JOGOS_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC13" populated="true" UUID="f13ae21a-d365-4e13-8cf1-3fe4bb68e7c0" ascendingOrDescending="UNSPECIFIED" column-ref="COL10" name="ID_JOGO" physicalName="ID_JOGO" />
+    <index id="IDX13" populated="true" UUID="92ef04c2-526b-498b-88ca-db04e2694837" clustered="false" name="JOGOS_pk" physicalName="JOGOS_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC14" populated="true" UUID="f13ae21a-d365-4e13-8cf1-3fe4bb68e7c0" ascendingOrDescending="UNSPECIFIED" column-ref="COL10" name="ID_JOGO" physicalName="ID_JOGO" />
     </index>
    </folder>
   </table>
-  <table id="TAB14" populated="true" UUID="4c490b25-c842-4587-8384-dc3cc348f256" name="TURMAS" objectType="TABLE" physicalName="TURMAS" >
+  <table id="TAB15" populated="true" UUID="4c490b25-c842-4587-8384-dc3cc348f256" name="TURMAS" objectType="TABLE" physicalName="TURMAS" >
    <remarks></remarks>
-   <folder id="FOLTAB141" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL15" populated="true" UUID="0e025695-f9ad-4910-b3ad-7c7854160351" autoIncrement="false" autoIncrementSequenceName="TURMAS_ID_TURMA_seq" defaultValue="" name="ID_TURMA" nullable="0" physicalName="ID_TURMA" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+   <folder id="FOLTAB151" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL16" populated="true" UUID="0e025695-f9ad-4910-b3ad-7c7854160351" autoIncrement="false" autoIncrementSequenceName="TURMAS_ID_TURMA_seq" defaultValue="" name="ID_TURMA" nullable="0" physicalName="ID_TURMA" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
-    <column id="COL16" populated="true" UUID="d46450e7-c301-4cf4-bbe1-5101905401d9" autoIncrement="false" autoIncrementSequenceName="TURMAS_ANO_seq" defaultValue="" name="ANO" nullable="0" physicalName="ANO" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL17" populated="true" UUID="d46450e7-c301-4cf4-bbe1-5101905401d9" autoIncrement="false" autoIncrementSequenceName="TURMAS_ANO_seq" defaultValue="" name="ANO" nullable="0" physicalName="ANO" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL17" populated="true" UUID="e2ca6ad7-47a0-4e79-8725-65fa83a9febc" autoIncrement="false" autoIncrementSequenceName="TURMAS_QUANTIDADE_ALUNOS_seq" defaultValue="" name="QUANTIDADE_ALUNOS" nullable="0" physicalName="QUANTIDADE_ALUNOS" precision="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL18" populated="true" UUID="e2ca6ad7-47a0-4e79-8725-65fa83a9febc" autoIncrement="false" autoIncrementSequenceName="TURMAS_QUANTIDADE_ALUNOS_seq" defaultValue="" name="QUANTIDADE_ALUNOS" nullable="0" physicalName="QUANTIDADE_ALUNOS" precision="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
-    <column id="COL18" populated="true" UUID="c261779a-ae4d-4641-97c5-2471e61e9a94" autoIncrement="false" autoIncrementSequenceName="TURMAS_TURMAS_ESCOLAS_FK_seq" defaultValue="" name="TURMAS_ESCOLAS_FK" nullable="0" physicalName="TURMAS_ESCOLAS_FK" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL19" populated="true" UUID="c261779a-ae4d-4641-97c5-2471e61e9a94" autoIncrement="false" autoIncrementSequenceName="TURMAS_CNPJ_seq" defaultValue="" name="CNPJ" nullable="0" physicalName="CNPJ" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
-    <folder id="FOLTAB143" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB153" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB142" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB152" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB144" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX19" populated="true" UUID="ba2bd907-37de-491e-a504-635d579f4064" clustered="false" name="TURMAS_pk" physicalName="TURMAS_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC20" populated="true" UUID="be5a688f-a4c8-41b5-bfca-c90d195ec8f9" ascendingOrDescending="UNSPECIFIED" column-ref="COL15" name="ID_TURMA" physicalName="ID_TURMA" />
+    <folder id="FOLTAB154" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX20" populated="true" UUID="ba2bd907-37de-491e-a504-635d579f4064" clustered="false" name="TURMAS_pk" physicalName="TURMAS_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC21" populated="true" UUID="be5a688f-a4c8-41b5-bfca-c90d195ec8f9" ascendingOrDescending="UNSPECIFIED" column-ref="COL16" name="ID_TURMA" physicalName="ID_TURMA" />
     </index>
    </folder>
   </table>
-  <table id="TAB21" populated="true" UUID="233f6c4d-7f17-4218-af83-2d572cf7785d" name="TIMES" objectType="TABLE" physicalName="TIMES" >
+  <table id="TAB22" populated="true" UUID="233f6c4d-7f17-4218-af83-2d572cf7785d" name="TIMES" objectType="TABLE" physicalName="TIMES" >
    <remarks></remarks>
-   <folder id="FOLTAB211" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL22" populated="true" UUID="87a7c9b9-8e93-43f9-bade-1981df3d0727" autoIncrement="false" autoIncrementSequenceName="TIMES_ID_TIME_seq" defaultValue="" name="ID_TIME" nullable="0" physicalName="ID_TIME" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+   <folder id="FOLTAB221" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL23" populated="true" UUID="87a7c9b9-8e93-43f9-bade-1981df3d0727" autoIncrement="false" autoIncrementSequenceName="TIMES_ID_TIME_seq" defaultValue="" name="ID_TIME" nullable="0" physicalName="ID_TIME" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
-    <column id="COL23" populated="true" UUID="0c3e4e69-e966-4461-a236-b22dac1c3127" autoIncrement="false" autoIncrementSequenceName="TIMES_TREINADOR_seq" defaultValue="" name="TREINADOR" nullable="0" physicalName="TREINADOR" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL24" populated="true" UUID="4f10abbf-ab4b-4f15-8baa-5f393d069254" autoIncrement="false" autoIncrementSequenceName="TIMES_NOME_seq" defaultValue="" name="NOME" nullable="0" physicalName="NOME" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL24" populated="true" UUID="2e4d9eac-e49e-4e15-b3ed-804eae9d1b20" autoIncrement="false" autoIncrementSequenceName="TIMES_CATEGORIA_seq" defaultValue="" name="CATEGORIA" nullable="0" physicalName="CATEGORIA" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL25" populated="true" UUID="0c3e4e69-e966-4461-a236-b22dac1c3127" autoIncrement="false" autoIncrementSequenceName="TIMES_TREINADOR_seq" defaultValue="" name="TREINADOR" nullable="0" physicalName="TREINADOR" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL26" populated="true" UUID="2e4d9eac-e49e-4e15-b3ed-804eae9d1b20" autoIncrement="false" autoIncrementSequenceName="TIMES_CATEGORIA_seq" defaultValue="" name="CATEGORIA" nullable="0" physicalName="CATEGORIA" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="694c5747-96c7-4384-8fb3-9ed3eeca726c" autoIncrement="false" autoIncrementSequenceName="TIMES_ID_TURMA_seq" defaultValue="" name="ID_TURMA" nullable="0" physicalName="ID_TURMA" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL28" populated="true" UUID="60b94059-2ac0-4784-90a0-abb5417e2934" autoIncrement="false" autoIncrementSequenceName="TIMES_ID_JOGO_seq" defaultValue="" name="ID_JOGO" nullable="0" physicalName="ID_JOGO" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     </folder>
-    <folder id="FOLTAB213" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB223" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB212" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB222" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB214" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX25" populated="true" UUID="7c897053-e9b8-462c-80f8-8c9e91dda9b4" clustered="false" name="TIMES_pk" physicalName="TIMES_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC26" populated="true" UUID="cdfea97b-b47b-423b-b6c3-9c6994a1d752" ascendingOrDescending="UNSPECIFIED" column-ref="COL22" name="ID_TIME" physicalName="ID_TIME" />
+    <folder id="FOLTAB224" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX29" populated="true" UUID="7c897053-e9b8-462c-80f8-8c9e91dda9b4" clustered="false" name="TIMES_pk" physicalName="TIMES_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC30" populated="true" UUID="cdfea97b-b47b-423b-b6c3-9c6994a1d752" ascendingOrDescending="UNSPECIFIED" column-ref="COL23" name="ID_TIME" physicalName="ID_TIME" />
     </index>
    </folder>
   </table>
-  <table id="TAB27" populated="true" UUID="e6735ab8-a250-4105-9b7d-ec0a777d9929" name="JOGADORES" objectType="TABLE" physicalName="JOGADORES" >
+  <table id="TAB31" populated="true" UUID="e6735ab8-a250-4105-9b7d-ec0a777d9929" name="JOGADORES" objectType="TABLE" physicalName="JOGADORES" >
    <remarks></remarks>
-   <folder id="FOLTAB271" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL28" populated="true" UUID="e2d70491-6b91-43e6-b86a-0d13ef501667" autoIncrement="false" autoIncrementSequenceName="JOGADORES_CPF_seq" defaultValue="" name="CPF" nullable="0" physicalName="CPF" precision="11" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+   <folder id="FOLTAB311" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL32" populated="true" UUID="e2d70491-6b91-43e6-b86a-0d13ef501667" autoIncrement="false" autoIncrementSequenceName="JOGADORES_CPF_seq" defaultValue="" name="CPF" nullable="0" physicalName="CPF" precision="11" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL29" populated="true" UUID="7388db94-1460-4eb9-8219-442a219c30ed" autoIncrement="false" autoIncrementSequenceName="JOGADORES_NOME_seq" defaultValue="" name="NOME" nullable="0" physicalName="NOME" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL33" populated="true" UUID="7388db94-1460-4eb9-8219-442a219c30ed" autoIncrement="false" autoIncrementSequenceName="JOGADORES_NOME_seq" defaultValue="" name="NOME" nullable="0" physicalName="NOME" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL30" populated="true" UUID="4d5b2d2e-9074-4f44-b9e9-a60295a37831" autoIncrement="false" autoIncrementSequenceName="JOGADORES_IDADE_seq" defaultValue="" name="IDADE" nullable="0" physicalName="IDADE" precision="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL34" populated="true" UUID="4d5b2d2e-9074-4f44-b9e9-a60295a37831" autoIncrement="false" autoIncrementSequenceName="JOGADORES_IDADE_seq" defaultValue="" name="IDADE" nullable="0" physicalName="IDADE" precision="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
-    <column id="COL31" populated="true" UUID="182faa7e-6f08-4d67-aa99-afdb3d62edad" autoIncrement="false" autoIncrementSequenceName="JOGADORES_POSICAO_seq" defaultValue="" name="POSICAO" nullable="0" physicalName="POSICAO" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL35" populated="true" UUID="182faa7e-6f08-4d67-aa99-afdb3d62edad" autoIncrement="false" autoIncrementSequenceName="JOGADORES_POSICAO_seq" defaultValue="" name="POSICAO" nullable="0" physicalName="POSICAO" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL32" populated="true" UUID="0710fb3f-e22d-4a5f-8243-5a2763fc8004" autoIncrement="false" autoIncrementSequenceName="JOGADORES_NUMERO_CAMISA_seq" defaultValue="" name="NUMERO_CAMISA" nullable="0" physicalName="NUMERO_CAMISA" precision="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL36" populated="true" UUID="0710fb3f-e22d-4a5f-8243-5a2763fc8004" autoIncrement="false" autoIncrementSequenceName="JOGADORES_NUMERO_CAMISA_seq" defaultValue="" name="NUMERO_CAMISA" nullable="0" physicalName="NUMERO_CAMISA" precision="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
-    <column id="COL33" populated="true" UUID="a4590505-0bac-42af-be8b-3e187788399d" autoIncrement="false" autoIncrementSequenceName="JOGADORES_JOGADORES_TIMES_FK_seq" defaultValue="" name="JOGADORES_TIMES_FK" nullable="0" physicalName="JOGADORES_TIMES_FK" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
-     <remarks></remarks>
-    </column>
-    </folder>
-    <folder id="FOLTAB273" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
-    </folder>
-    <folder id="FOLTAB272" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
-    </folder>
-    <folder id="FOLTAB274" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX34" populated="true" UUID="8e34cd41-ee9e-40c7-8ff3-6bbc21ae59f8" clustered="false" name="JOGADORES_pk" physicalName="JOGADORES_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC35" populated="true" UUID="62ebc6f6-a01f-4b21-8743-2536d24cd608" ascendingOrDescending="UNSPECIFIED" column-ref="COL28" name="CPF" physicalName="CPF" />
-    </index>
-   </folder>
-  </table>
-  <table id="TAB36" populated="true" UUID="5cfc4669-f076-4135-8753-058360910733" name="TIMES_TURMAS" objectType="TABLE" physicalName="TIMES_TURMAS" >
-   <remarks></remarks>
-   <folder id="FOLTAB361" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL37" populated="true" UUID="6d66123c-677c-45a6-9162-de2812d04335" autoIncrement="false" autoIncrementSequenceName="TIMES_TURMAS_ID_TURMA_seq" defaultValue="" name="ID_TURMA" nullable="0" physicalName="ID_TURMA" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
-     <remarks></remarks>
-    </column>
-    <column id="COL38" populated="true" UUID="59ef4686-9a6d-4e02-9eea-598f151ab558" autoIncrement="false" autoIncrementSequenceName="TIMES_TURMAS_ID_TIME_seq" defaultValue="" name="ID_TIME" nullable="0" physicalName="ID_TIME" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL37" populated="true" UUID="a4590505-0bac-42af-be8b-3e187788399d" autoIncrement="false" autoIncrementSequenceName="JOGADORES_ID_TIME_seq" defaultValue="" name="ID_TIME" nullable="0" physicalName="ID_TIME" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     </folder>
-    <folder id="FOLTAB363" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB313" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB362" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB312" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB364" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX39" populated="true" UUID="aedaa3e3-120e-401c-94fa-13b0c3a76746" clustered="false" name="TIMES_TURMAS_pk" physicalName="TIMES_TURMAS_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC40" populated="true" UUID="2edf10a7-2b25-445d-9896-470d1635a5be" ascendingOrDescending="UNSPECIFIED" column-ref="COL37" name="ID_TURMA" physicalName="ID_TURMA" />
-     <index-column id="IDC41" populated="true" UUID="5e63adfa-493d-43ec-9d1e-7296c80f63c1" ascendingOrDescending="UNSPECIFIED" column-ref="COL38" name="ID_TIME" physicalName="ID_TIME" />
-    </index>
-   </folder>
-  </table>
-  <table id="TAB42" populated="true" UUID="d68a0e1a-3771-4db1-bb5a-8e83029f93a8" name="ESCOLAS_JOGOS" objectType="TABLE" physicalName="ESCOLAS_JOGOS" >
-   <remarks></remarks>
-   <folder id="FOLTAB421" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL43" populated="true" UUID="d13658e1-b7e7-45c6-be3b-ee27b5f7ede9" autoIncrement="false" autoIncrementSequenceName="ESCOLAS_JOGOS_CNPJ_ESCOLA_seq" defaultValue="" name="CNPJ_ESCOLA" nullable="0" physicalName="CNPJ_ESCOLA" precision="15" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
-     <remarks></remarks>
-    </column>
-    <column id="COL44" populated="true" UUID="ffd80250-907a-465a-8426-e0598b034f57" autoIncrement="false" autoIncrementSequenceName="ESCOLAS_JOGOS_ID_JOGO_seq" defaultValue="" name="ID_JOGO" nullable="0" physicalName="ID_JOGO" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
-     <remarks></remarks>
-    </column>
-    </folder>
-    <folder id="FOLTAB423" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
-    </folder>
-    <folder id="FOLTAB422" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
-    </folder>
-    <folder id="FOLTAB424" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX45" populated="true" UUID="f1d6c07a-ce59-44f4-bf27-914e63a35d1b" clustered="false" name="ESCOLAS_JOGOS_pk" physicalName="ESCOLAS_JOGOS_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC46" populated="true" UUID="7aafc594-04a5-4aea-82af-943a057ee5cf" ascendingOrDescending="UNSPECIFIED" column-ref="COL43" name="CNPJ_ESCOLA" physicalName="CNPJ_ESCOLA" />
-     <index-column id="IDC47" populated="true" UUID="c3c70a00-6ff8-4555-b005-ec7ff5adebf4" ascendingOrDescending="UNSPECIFIED" column-ref="COL44" name="ID_JOGO" physicalName="ID_JOGO" />
-    </index>
-   </folder>
-  </table>
-  <table id="TAB48" populated="true" UUID="ea354c85-4ebd-41ab-9091-e3292722615d" name="JOGOS_TIMES" objectType="TABLE" physicalName="JOGOS_TIMES" >
-   <remarks></remarks>
-   <folder id="FOLTAB481" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL49" populated="true" UUID="edfb383a-efe7-4d05-a6d6-6e7ec02f3e33" autoIncrement="false" autoIncrementSequenceName="JOGOS_TIMES_ID_JOGO_seq" defaultValue="" name="ID_JOGO" nullable="0" physicalName="ID_JOGO" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
-     <remarks></remarks>
-    </column>
-    <column id="COL50" populated="true" UUID="20a69ab8-8188-4322-90cd-8e68d3823357" autoIncrement="false" autoIncrementSequenceName="JOGOS_TIMES_ID_TIME_seq" defaultValue="" name="ID_TIME" nullable="0" physicalName="ID_TIME" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
-     <remarks></remarks>
-    </column>
-    </folder>
-    <folder id="FOLTAB483" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
-    </folder>
-    <folder id="FOLTAB482" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
-    </folder>
-    <folder id="FOLTAB484" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX51" populated="true" UUID="93c300bf-5145-4206-84ce-a167234d8668" clustered="false" name="JOGOS_TIMES_pk" physicalName="JOGOS_TIMES_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC52" populated="true" UUID="8b28aea0-9034-4f1d-90dd-5fa73e48e1cd" ascendingOrDescending="UNSPECIFIED" column-ref="COL49" name="ID_JOGO" physicalName="ID_JOGO" />
-     <index-column id="IDC53" populated="true" UUID="e5ecf505-6a2e-4a6e-a3c8-abc1a55ce35e" ascendingOrDescending="UNSPECIFIED" column-ref="COL50" name="ID_TIME" physicalName="ID_TIME" />
+    <folder id="FOLTAB314" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX38" populated="true" UUID="8e34cd41-ee9e-40c7-8ff3-6bbc21ae59f8" clustered="false" name="JOGADORES_pk" physicalName="JOGADORES_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC39" populated="true" UUID="62ebc6f6-a01f-4b21-8743-2536d24cd608" ascendingOrDescending="UNSPECIFIED" column-ref="COL32" name="CPF" physicalName="CPF" />
     </index>
    </folder>
   </table>
   <relationships>
-   <relationship id="REL54" populated="true" UUID="640edf11-29ca-4c56-88e7-e187deee08c4" deferrability="7" deleteRule="3" fk-table-ref="TAB14" fkCardinality="7" identifying="false" name="ESCOLAS_TURMAS_fk" physicalName="ESCOLAS_TURMAS_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP55" populated="true" UUID="1e36d17e-5559-4215-b961-d0666b6b8e83" fk-column-ref="COL18" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   <relationship id="REL40" populated="true" UUID="640edf11-29ca-4c56-88e7-e187deee08c4" deferrability="7" deleteRule="3" fk-table-ref="TAB15" fkCardinality="7" identifying="false" name="ESCOLAS_TURMAS_fk" physicalName="ESCOLAS_TURMAS_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP41" populated="true" UUID="1e36d17e-5559-4215-b961-d0666b6b8e83" fk-column-ref="COL19" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL56" populated="true" UUID="ecdb4522-7693-4fa6-9a15-71fc9750207a" deferrability="7" deleteRule="3" fk-table-ref="TAB42" fkCardinality="7" identifying="false" name="ESCOLAS_ESCOLAS_JOGOS_fk" physicalName="ESCOLAS_ESCOLAS_JOGOS_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP57" populated="true" UUID="7db6b676-0101-48e0-a28b-5259d1da20f7" fk-column-ref="COL43" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   <relationship id="REL42" populated="true" UUID="c222ea95-390a-43ef-ab92-ffbf74b13388" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="false" name="ESCOLAS_JOGOS_fk" physicalName="ESCOLAS_JOGOS_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP43" populated="true" UUID="54c91ef8-cb32-4b4a-9228-2a837dd75b57" fk-column-ref="COL12" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL58" populated="true" UUID="028e21cf-e55c-41e5-b157-d929a7445e98" deferrability="7" deleteRule="3" fk-table-ref="TAB42" fkCardinality="6" identifying="false" name="JOGOS_ESCOLAS_JOGOS_fk" physicalName="JOGOS_ESCOLAS_JOGOS_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP59" populated="true" UUID="0e952088-f47c-4ead-8139-e56bff06d384" fk-column-ref="COL44" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
+   <relationship id="REL44" populated="true" UUID="47f7324c-3233-45bd-bd10-d8d9c8b3d1c6" deferrability="7" deleteRule="3" fk-table-ref="TAB22" fkCardinality="6" identifying="false" name="JOGOS_TIMES_fk" physicalName="JOGOS_TIMES_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP45" populated="true" UUID="bd1dec9c-0798-4649-baf1-52f1ec546871" fk-column-ref="COL28" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
    </relationship>
-   <relationship id="REL60" populated="true" UUID="b69bf2e0-daea-47bc-870d-b6ac6c7e7d8c" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="6" identifying="false" name="JOGOS_JOGOS_TIMES_fk" physicalName="JOGOS_JOGOS_TIMES_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP61" populated="true" UUID="3f4babe7-8c42-447d-8b85-f31cca1cea0f" fk-column-ref="COL49" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
+   <relationship id="REL46" populated="true" UUID="1e2e9437-560b-4e5f-aa5b-c6c584885631" deferrability="7" deleteRule="3" fk-table-ref="TAB22" fkCardinality="3" identifying="false" name="TURMAS_TIMES_fk" physicalName="TURMAS_TIMES_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP47" populated="true" UUID="c1f55c81-f558-4cc1-836b-36c6cc2ae7ba" fk-column-ref="COL27" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL16" />
    </relationship>
-   <relationship id="REL62" populated="true" UUID="e5df2cf7-f1e4-4879-9f31-8afc0c47f642" deferrability="7" deleteRule="3" fk-table-ref="TAB36" fkCardinality="7" identifying="false" name="TURMAS_TIMES_TURMAS_fk" physicalName="TURMAS_TIMES_TURMAS_fk" pk-table-ref="TAB14" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP63" populated="true" UUID="1bbcfa67-1d63-427b-8f7d-629276d287fc" fk-column-ref="COL37" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL15" />
-   </relationship>
-   <relationship id="REL64" populated="true" UUID="e0abf5b8-23ec-4553-9b3c-3892ffde9691" deferrability="7" deleteRule="3" fk-table-ref="TAB36" fkCardinality="6" identifying="false" name="TIMES_TIMES_TURMAS_fk" physicalName="TIMES_TIMES_TURMAS_fk" pk-table-ref="TAB21" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP65" populated="true" UUID="d866e47d-3cce-433c-8048-4ffeb0072ed1" fk-column-ref="COL38" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL22" />
-   </relationship>
-   <relationship id="REL66" populated="true" UUID="c154e8ba-b638-4939-bb02-0540da67fac2" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="false" name="TIMES_JOGOS_TIMES_fk" physicalName="TIMES_JOGOS_TIMES_fk" pk-table-ref="TAB21" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP67" populated="true" UUID="459f3b8d-2936-4424-bb2f-025f76f3ea86" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL22" />
-   </relationship>
-   <relationship id="REL68" populated="true" UUID="f0c2add3-7aa1-4a6a-92d8-61a024b3635c" deferrability="7" deleteRule="3" fk-table-ref="TAB27" fkCardinality="6" identifying="false" name="TIMES_JOGADORES_fk" physicalName="TIMES_JOGADORES_fk" pk-table-ref="TAB21" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP69" populated="true" UUID="9726e37d-1425-4667-b370-427de05333bf" fk-column-ref="COL33" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL22" />
+   <relationship id="REL48" populated="true" UUID="f0c2add3-7aa1-4a6a-92d8-61a024b3635c" deferrability="7" deleteRule="3" fk-table-ref="TAB31" fkCardinality="6" identifying="false" name="TIMES_JOGADORES_fk" physicalName="TIMES_JOGADORES_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP49" populated="true" UUID="9726e37d-1425-4667-b370-427de05333bf" fk-column-ref="COL37" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
    </relationship>
   </relationships>
  </target-database>
@@ -234,22 +174,16 @@
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB1" x="600" y="105" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB9" x="286" y="356" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB14" x="563" y="310" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB21" x="608" y="613" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB27" x="425" y="792" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB36" x="603" y="471" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB42" x="263" y="182" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB48" x="286" y="520" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL54" pkConnection="0.4807692307692308" fkConnection="0.49583333333333335" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
-  <table-link relationship-ref="REL62" pkConnection="0.5071942446043165" fkConnection="0.49019607843137253" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
-  <table-link relationship-ref="REL64" pkConnection="0.47761194029850745" fkConnection="0.4950980392156863" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
-  <table-link relationship-ref="REL58" pkConnection="0.5026178010471204" fkConnection="0.49159663865546216" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
-  <table-link relationship-ref="REL56" pkConnection="0.5454545454545454" fkConnection="0.48360655737704916" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="130"/>
-  <table-link relationship-ref="REL60" pkConnection="0.5078534031413613" fkConnection="0.49238578680203043" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
-  <table-link relationship-ref="REL66" pkConnection="0.5915492957746479" fkConnection="0.5025380710659898" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="66"/>
-  <table-link relationship-ref="REL68" pkConnection="0.35323383084577115" fkConnection="0.4904214559386973" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-pane table-ref="TAB1" x="372" y="39" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB9" x="158" y="384" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB15" x="354" y="243" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB22" x="372" y="548" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB31" x="376" y="723" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL40" pkConnection="0.4807692307692308" fkConnection="0.49583333333333335" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL48" pkConnection="0.5472636815920398" fkConnection="0.4904214559386973" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL42" pkConnection="0.5858585858585859" fkConnection="0.5077720207253886" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="130"/>
+  <table-link relationship-ref="REL46" pkConnection="0.49583333333333335" fkConnection="0.4975124378109453" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL44" pkConnection="0.5233160621761658" fkConnection="0.6363636363636364" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="36"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
