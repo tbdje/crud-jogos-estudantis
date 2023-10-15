@@ -57,20 +57,26 @@ class ControllerEscola:
             registro_escola = json.loads(registro_escola)[0]
 
             escola = Escola(registro_escola["cnpj"], registro_escola["nome"], registro_escola["nivel_ensino"], registro_escola["endereco"], registro_escola["telefone"])
-            print("[+]", escola.to_string())
+            print("[^+]", escola.to_string())
             return escola
         else:
             print("[!] Registro não existente no sistema.")
             return None
 
-    def deletar_registro(self):
+    def deletar_registro(self) -> Union[Escola, None]:
         oracle = OracleQueries(can_write=True)
         oracle.connect()
 
         cnpj = input("Insira o CNPJ (somente os numeros): ").strip()
 
         if self.verificar_registro(cnpj):
-            pass
+            registro_escola = json.loads(oracle.sqlToJson(f"SELECT * FROM ESCOLAS WHERE CNPJ = '{cnpj}'"))[0]
+
+            oracle.write(f"DELETE FROM ESCOLAS WHERE CNPJ = '{cnpj}'")
+
+            escola = Escola(registro_escola["cnpj"], registro_escola["nome"], registro_escola["nivel_ensino"], registro_escola["endereco"], registro_escola["telefone"])
+            print("[-]", escola.to_string())
+            return escola
         else:
             print("[!] Registro não existente no sistema.")
             return None
