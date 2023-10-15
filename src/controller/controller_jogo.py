@@ -34,11 +34,15 @@ class ControllerJogo:
 
         mapeamento_jogo = dict(id_jogo=tipo_dado_codigo, datahora=datahora, escola=escola.get_cnpj())
 
-        cursor.begin("""
-        begin
-            :id_jogo :=  
-        end;
-        """)
+        cursor.execute("""
+        BEGIN
+            :ID_JOGO := JOGOS_ID_SEQ.NEXTVAL;
+            INSERT  INTO JOGOS VALUES (:ID_JOGO, :DATA_HORA, :CNPJ)
+        END;
+        """, mapeamento_jogo)
+
+        id_jogo = tipo_dado_codigo.getvalue()
+        oracle.conn.commit()
 
     def atualizar_registro(self):
         pass

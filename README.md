@@ -1,1 +1,1 @@
-# crud-jogos-estudantis
+# CRUD para Jogos Estudantis
