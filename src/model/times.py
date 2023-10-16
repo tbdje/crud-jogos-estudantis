@@ -38,6 +38,6 @@ class Time:
     def set_turma(self, nova_turma:Turma):
         self.turma = nova_turma
 
-    def __str__(self) -> str:
+    def to_string(self) -> str:
         return f"{self.get_nome()} | {self.get_treinador()} | {self.get_categoria()} | {self.get_turma().get_ano()}"
     

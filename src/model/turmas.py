@@ -31,6 +31,6 @@ class Turma:
     def set_escola(self, nova_escola:Escola):
         self.escola = nova_escola
 
-    def __str__(self):
+    def to_string(self):
         return f"{self.get_ano()} | {self.get_quantidade_alunos()} | {self.get_escola().get_nome()}"
     
