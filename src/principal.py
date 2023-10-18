@@ -62,7 +62,7 @@ def atualizar(opcao_usuario:int) -> None:
         escola_atualizada = controller_escola.atualizar_registro()
     elif opcao_usuario == 2:
         relatorio.get_relatorio_jogadores()
-        jogador_atualizado = controller_jogador.atualizar_registro
+        jogador_atualizado = controller_jogador.atualizar_registro()
     elif opcao_usuario == 3:
         relatorio.get_relatorio_turmas()
         turma_atualizada = controller_turma.atualizar_registro()

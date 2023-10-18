@@ -91,7 +91,7 @@ class ControllerTime:
         if self.verificar_registro(id_time):
             escolha = input("O time escolhido será deletado, bem como os jogadores nele. Tem certeza? [sim/nao]: ").lower()[0]
             if escolha == "s":
-                escolha = input("tem certeza? [sim/nao]: ").lower()[0]
+                escolha = input("Tem certeza? [sim/nao]: ").lower()[0]
                 if escolha == "s":
                     oracle = OracleQueries(can_write=True)
                     oracle.connect()
@@ -99,8 +99,9 @@ class ControllerTime:
 
                     jogadores = json.loads(oracle.sqlToJson(f"SELECT CPF FROM JOGADORES WHERE ID_TIME = '{id_time}'"))
 
-                    for cpf in jogadores:
-                        oracle.write(f"DELETE FROM JOGADORES WHERE CPF = '{cpf['cpf']}'")
+                    if jogadores:
+                        for cpf in jogadores:
+                            oracle.write(f"DELETE FROM JOGADORES WHERE CPF = '{cpf['cpf']}'")
 
                     registro_turma = json.loads(oracle.sqlToJson(f"SELECT * FROM TURMAS WHERE ID_TURMA = '{registro_time['id_turma']}'"))[0]
                     registro_escola = json.loads(oracle.sqlToJson(f"SELECT * FROM ESCOLAS WHERE CNPJ = '{registro_turma['cnpj']}'"))[0]
@@ -112,6 +113,8 @@ class ControllerTime:
                     jogo = Jogo(registro_jogo["id_jogo"], registro_jogo["data_hora"], escola)
 
                     time = Time(registro_time["id_time"], registro_time["nome"], registro_time["treinador"], registro_time["categoria"], turma, jogo)
+
+                    oracle.write(f"DELETE FROM TIMES WHERE ID_TIME = '{id_time}'")
 
                     print("[-]", time.to_string())
 
