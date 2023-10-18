@@ -19,13 +19,13 @@ class ControllerJogo:
 
         if escola is None:
             return None
-       
+        
         data_jogo = input("Insira a data que ocorrerá o jogo (dia/mes/ano): ").strip()
         hora_jogo = input("Insira a hora em que o jogo acontecerá (hora:minuto): ").strip()
 
         dia, mes, ano = list(map(int, data_jogo.split("/")))
         hora, minuto = list(map(int, hora_jogo.split(":")))
-       
+        
         datahora = datetime(ano, mes, dia, hora, minuto).strftime("%Y-%m-%d %H:%M")
 
         oracle = OracleQueries(can_write=True)
@@ -71,7 +71,7 @@ class ControllerJogo:
         else:
             print("[!] Esse jogo não existe no sistema.")
             return None
-       
+        
 
     def deletar_registro(self) -> Union[Jogo, None]:
         id_jogo = int(input("Insira o ID do jogo que deseja deletar: "))
@@ -123,7 +123,7 @@ class ControllerJogo:
         else:
             print("[!] Escola não cadastrada no sistema.")
             return None
-       
+        
     def listar_jogos(self) -> None:
         oracle = OracleQueries(can_write=True)
         oracle.connect()

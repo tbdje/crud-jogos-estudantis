@@ -41,7 +41,7 @@ class ControllerTurma:
         turma = Turma(registro_turma["id_turma"], registro_turma["ano"], registro_turma["quantidade_alunos"], registro_escola)
         print("[+]", turma.to_string())
         return turma
-   
+    
     def atualizar_registro(self) -> Union[Turma, None]:
         id_turma = int(input("ID da turma que deseja alterar: "))
 
@@ -76,17 +76,20 @@ class ControllerTurma:
                 escolha = input("Todos os jogadores e times da turma serão deletados. Confirma a exclusão? [sim/nao]: ").lower()[0]
 
                 if escolha == "s":
-                    id_time = json.loads(oracle.sqlToJson(f"SELECT ID_TIME FROM TIMES WHERE ID_TURMA = '{id_turma}'"))[0]["id_time"]
-                    cpfs_jogadores = json.loads(oracle.sqlToJson(f"SELECT CPF FROM JOGADORES WHERE ID_TIME = '{id_time}'"))
+                    id_time = bool(json.loads(oracle.sqlToJson(f"SELECT ID_TIME FROM TIMES WHERE ID_TURMA = '{id_turma}'")))
+                    
+                    if id_time:
+                        id_time = id_time[0]["id_time"]
+                        cpfs_jogadores = json.loads(oracle.sqlToJson(f"SELECT CPF FROM JOGADORES WHERE ID_TIME = '{id_time}'"))
 
-                    if cpfs_jogadores:
-                        for cpf in cpfs_jogadores:
-                            oracle.write(f"DELETE FROM JOGADORES WHERE CPF = '{cpf['cpf']}'")
-                       
-                        print("[-] Jogadores removidos.")
+                        if cpfs_jogadores:
+                            for cpf in cpfs_jogadores:
+                                oracle.write(f"DELETE FROM JOGADORES WHERE CPF = '{cpf['cpf']}'")
+                            
+                            print("[-] Jogadores removidos.")
 
-                    oracle.write(f"DELETE FROM TIMES WHERE ID_TIME = '{id_time}'")
-                    print("[-] Time removidos.")
+                        oracle.write(f"DELETE FROM TIMES WHERE ID_TIME = '{id_time}'")
+                        print("[-] Time removido.")
 
                     oracle.write(f"DELETE FROM TURMAS WHERE ID_TURMA = {id_turma}")
 
@@ -114,7 +117,7 @@ class ControllerTurma:
             return Escola(registro_escola["cnpj"], registro_escola["nome"], registro_escola["nivel_ensino"], registro_escola["endereco"], registro_escola["telefone"])
         else:
             return None
-   
+    
     def verificar_registro(self, id_turma:int):
         oracle = OracleQueries(can_write=True)
         oracle.connect()
